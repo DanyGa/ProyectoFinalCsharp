@@ -16,7 +16,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         public MatrizPeso()
         {
             InitializeComponent();
-
         }
 
         public MatrizPeso(List<NodoGrafo> gr)

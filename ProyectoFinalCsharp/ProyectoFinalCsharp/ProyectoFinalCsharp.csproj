@@ -197,6 +197,9 @@
     <EmbeddedResource Include="AlgoritmosdeOrdenamiento\RadixSort.resx">
       <DependentUpon>RadixSort.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\ShellSort.resx">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Arboles\Arbol.resx">
       <DependentUpon>Arbol.cs</DependentUpon>
     </EmbeddedResource>

@@ -63,7 +63,6 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-
             try
             {
                 lbNum.Items.Clear();

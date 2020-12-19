@@ -64,12 +64,33 @@
     <Compile Include="AlgoritmosdeOrdenamiento\CountingSort.Designer.cs">
       <DependentUpon>CountingSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.Designer.cs">
+      <DependentUpon>InsertionSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlgoritmosdeOrdenamiento\RadixSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoritmosdeOrdenamiento\RadixSort.Designer.cs">
+      <DependentUpon>RadixSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlgoritmosdeOrdenamiento\ShellSort.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AlgoritmosdeOrdenamiento\ShellSort.Designer.cs">
       <DependentUpon>ShellSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstructurasdeDatos\Arboles\Arbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructurasdeDatos\Arboles\Arbol.Designer.cs">
+      <DependentUpon>Arbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstructurasdeDatos\Arboles\ArbolBinario.cs" />
+    <Compile Include="EstructurasdeDatos\Arboles\ArbolBinarioOrdenado.cs" />
+    <Compile Include="EstructurasdeDatos\Arboles\NodoArbol.cs" />
     <Compile Include="EstructurasdeDatos\Colas\Cola.cs" />
     <Compile Include="EstructurasdeDatos\Colas\Colas.cs">
       <SubType>Form</SubType>
@@ -121,11 +142,11 @@
     <Compile Include="EstructurasdeDatos\Pilas\Pilas.Designer.cs">
       <DependentUpon>Pilas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuAlgoritmos.cs">
       <SubType>Form</SubType>
@@ -141,8 +162,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\BubbleSort.resx">
+      <DependentUpon>BubbleSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\CocktailSort.resx">
+      <DependentUpon>CocktailSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\CountingSort.resx">
+      <DependentUpon>CountingSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Arboles\Arbol.resx">
+      <DependentUpon>Arbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Colas\Colas.resx">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaDobleCircular\ListaDobleCircular.resx">
+      <DependentUpon>ListaDobleCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaDoble\ListaDoble.resx">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaSimpleCircular\ListaSimpleCircular.resx">
+      <DependentUpon>ListaSimpleCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaSimple\ListaSimple.resx">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\MenuListas.resx">
+      <DependentUpon>MenuListas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Pilas\Pilas.resx">
+      <DependentUpon>Pilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAlgoritmos.resx">
+      <DependentUpon>MenuAlgoritmos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEstructuras.resx">
+      <DependentUpon>MenuEstructuras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,7 +227,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EstructurasdeDatos\Arboles\" />
     <Folder Include="EstructurasdeDatos\Grafos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

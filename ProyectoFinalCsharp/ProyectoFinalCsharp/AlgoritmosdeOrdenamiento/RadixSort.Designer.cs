@@ -1,6 +1,6 @@
-﻿namespace ProyectoFinalCsharp
+﻿namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
 {
-    partial class Menu
+    partial class RadixSort
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmMenu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.ControlBox = false;
-            this.Name = "frmMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
-            this.ResumeLayout(false);
-
+            this.Text = "RadixSort";
         }
 
         #endregion
     }
 }
-

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoFinalCsharp
+namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
 {
-    public partial class Menu : Form
+    public partial class RadixSort : Form
     {
-        public Menu()
+        public RadixSort()
         {
             InitializeComponent();
         }

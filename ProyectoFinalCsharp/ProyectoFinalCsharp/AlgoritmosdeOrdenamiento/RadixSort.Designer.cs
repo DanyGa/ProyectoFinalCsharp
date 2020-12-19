@@ -28,12 +28,287 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadixSort));
+            this.lblMax = new System.Windows.Forms.Label();
+            this.lblMin = new System.Windows.Forms.Label();
+            this.lblNum = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.txtMin = new System.Windows.Forms.TextBox();
+            this.txtMax = new System.Windows.Forms.TextBox();
+            this.lbNum = new System.Windows.Forms.ListBox();
+            this.lbOrd = new System.Windows.Forms.ListBox();
+            this.btnGenerar = new System.Windows.Forms.Button();
+            this.btnOrdenar = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.gbTiempo = new System.Windows.Forms.GroupBox();
+            this.lblInv = new System.Windows.Forms.Label();
+            this.lblCom = new System.Windows.Forms.Label();
+            this.lblIntercambios = new System.Windows.Forms.Label();
+            this.lblComparaciones = new System.Windows.Forms.Label();
+            this.lblOrd = new System.Windows.Forms.Label();
+            this.lblOrdenar = new System.Windows.Forms.Label();
+            this.gbTiempo.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lblMax
+            // 
+            this.lblMax.AutoSize = true;
+            this.lblMax.BackColor = System.Drawing.Color.Snow;
+            this.lblMax.Font = new System.Drawing.Font("Britannic Bold", 13.8F);
+            this.lblMax.ForeColor = System.Drawing.Color.Peru;
+            this.lblMax.Location = new System.Drawing.Point(62, 223);
+            this.lblMax.Name = "lblMax";
+            this.lblMax.Size = new System.Drawing.Size(174, 27);
+            this.lblMax.TabIndex = 0;
+            this.lblMax.Text = "Limite Maximo:";
+            // 
+            // lblMin
+            // 
+            this.lblMin.AutoSize = true;
+            this.lblMin.BackColor = System.Drawing.Color.Snow;
+            this.lblMin.Font = new System.Drawing.Font("Britannic Bold", 13.8F);
+            this.lblMin.ForeColor = System.Drawing.Color.Peru;
+            this.lblMin.Location = new System.Drawing.Point(62, 176);
+            this.lblMin.Name = "lblMin";
+            this.lblMin.Size = new System.Drawing.Size(171, 27);
+            this.lblMin.TabIndex = 1;
+            this.lblMin.Text = "Limite Minimo:";
+            // 
+            // lblNum
+            // 
+            this.lblNum.AutoSize = true;
+            this.lblNum.BackColor = System.Drawing.Color.Snow;
+            this.lblNum.Font = new System.Drawing.Font("Britannic Bold", 13.8F);
+            this.lblNum.ForeColor = System.Drawing.Color.Peru;
+            this.lblNum.Location = new System.Drawing.Point(62, 130);
+            this.lblNum.Name = "lblNum";
+            this.lblNum.Size = new System.Drawing.Size(113, 27);
+            this.lblNum.TabIndex = 2;
+            this.lblNum.Text = "Numeros:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Snow;
+            this.label4.Font = new System.Drawing.Font("Elephant", 22.2F);
+            this.label4.ForeColor = System.Drawing.Color.Peru;
+            this.label4.Location = new System.Drawing.Point(292, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(229, 49);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Radix Sort";
+            // 
+            // txtNum
+            // 
+            this.txtNum.BackColor = System.Drawing.Color.Snow;
+            this.txtNum.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.txtNum.ForeColor = System.Drawing.Color.Peru;
+            this.txtNum.Location = new System.Drawing.Point(197, 135);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(181, 26);
+            this.txtNum.TabIndex = 4;
+            // 
+            // txtMin
+            // 
+            this.txtMin.BackColor = System.Drawing.Color.Snow;
+            this.txtMin.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.txtMin.ForeColor = System.Drawing.Color.Peru;
+            this.txtMin.Location = new System.Drawing.Point(262, 181);
+            this.txtMin.Name = "txtMin";
+            this.txtMin.Size = new System.Drawing.Size(116, 26);
+            this.txtMin.TabIndex = 5;
+            // 
+            // txtMax
+            // 
+            this.txtMax.BackColor = System.Drawing.Color.Snow;
+            this.txtMax.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.txtMax.ForeColor = System.Drawing.Color.Peru;
+            this.txtMax.Location = new System.Drawing.Point(262, 228);
+            this.txtMax.Name = "txtMax";
+            this.txtMax.Size = new System.Drawing.Size(116, 26);
+            this.txtMax.TabIndex = 6;
+            // 
+            // lbNum
+            // 
+            this.lbNum.BackColor = System.Drawing.Color.Snow;
+            this.lbNum.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.lbNum.ForeColor = System.Drawing.Color.Peru;
+            this.lbNum.FormattingEnabled = true;
+            this.lbNum.ItemHeight = 19;
+            this.lbNum.Location = new System.Drawing.Point(494, 130);
+            this.lbNum.Name = "lbNum";
+            this.lbNum.Size = new System.Drawing.Size(110, 365);
+            this.lbNum.TabIndex = 7;
+            // 
+            // lbOrd
+            // 
+            this.lbOrd.BackColor = System.Drawing.Color.Snow;
+            this.lbOrd.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.lbOrd.ForeColor = System.Drawing.Color.Peru;
+            this.lbOrd.FormattingEnabled = true;
+            this.lbOrd.ItemHeight = 19;
+            this.lbOrd.Location = new System.Drawing.Point(647, 130);
+            this.lbOrd.Name = "lbOrd";
+            this.lbOrd.Size = new System.Drawing.Size(110, 365);
+            this.lbOrd.TabIndex = 8;
+            // 
+            // btnGenerar
+            // 
+            this.btnGenerar.BackColor = System.Drawing.Color.Snow;
+            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.ForeColor = System.Drawing.Color.Peru;
+            this.btnGenerar.Location = new System.Drawing.Point(66, 280);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(136, 69);
+            this.btnGenerar.TabIndex = 9;
+            this.btnGenerar.Text = "Generar";
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
+            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenar.ForeColor = System.Drawing.Color.Peru;
+            this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(136, 69);
+            this.btnOrdenar.TabIndex = 10;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = false;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Snow;
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.Color.Peru;
+            this.btnMenu.Location = new System.Drawing.Point(718, 521);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(107, 53);
+            this.btnMenu.TabIndex = 11;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            // 
+            // gbTiempo
+            // 
+            this.gbTiempo.BackColor = System.Drawing.Color.Snow;
+            this.gbTiempo.Controls.Add(this.lblOrdenar);
+            this.gbTiempo.Controls.Add(this.lblOrd);
+            this.gbTiempo.Controls.Add(this.lblComparaciones);
+            this.gbTiempo.Controls.Add(this.lblIntercambios);
+            this.gbTiempo.Controls.Add(this.lblCom);
+            this.gbTiempo.Controls.Add(this.lblInv);
+            this.gbTiempo.Font = new System.Drawing.Font("Britannic Bold", 12F);
+            this.gbTiempo.ForeColor = System.Drawing.Color.Peru;
+            this.gbTiempo.Location = new System.Drawing.Point(23, 401);
+            this.gbTiempo.Name = "gbTiempo";
+            this.gbTiempo.Size = new System.Drawing.Size(406, 143);
+            this.gbTiempo.TabIndex = 12;
+            this.gbTiempo.TabStop = false;
+            // 
+            // lblInv
+            // 
+            this.lblInv.AutoSize = true;
+            this.lblInv.Location = new System.Drawing.Point(14, 18);
+            this.lblInv.Name = "lblInv";
+            this.lblInv.Size = new System.Drawing.Size(133, 22);
+            this.lblInv.TabIndex = 0;
+            this.lblInv.Text = "Intercambios:";
+            // 
+            // lblCom
+            // 
+            this.lblCom.AutoSize = true;
+            this.lblCom.Location = new System.Drawing.Point(14, 64);
+            this.lblCom.Name = "lblCom";
+            this.lblCom.Size = new System.Drawing.Size(155, 22);
+            this.lblCom.TabIndex = 1;
+            this.lblCom.Text = "Comparaciones:";
+            // 
+            // lblIntercambios
+            // 
+            this.lblIntercambios.AutoSize = true;
+            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
+            this.lblIntercambios.Name = "lblIntercambios";
+            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
+            this.lblIntercambios.TabIndex = 2;
+            this.lblIntercambios.Text = "0";
+            // 
+            // lblComparaciones
+            // 
+            this.lblComparaciones.AutoSize = true;
+            this.lblComparaciones.Location = new System.Drawing.Point(188, 64);
+            this.lblComparaciones.Name = "lblComparaciones";
+            this.lblComparaciones.Size = new System.Drawing.Size(22, 22);
+            this.lblComparaciones.TabIndex = 3;
+            this.lblComparaciones.Text = "0";
+            // 
+            // lblOrd
+            // 
+            this.lblOrd.AutoSize = true;
+            this.lblOrd.Location = new System.Drawing.Point(14, 110);
+            this.lblOrd.Name = "lblOrd";
+            this.lblOrd.Size = new System.Drawing.Size(90, 22);
+            this.lblOrd.TabIndex = 4;
+            this.lblOrd.Text = "Ordenar:";
+            // 
+            // lblOrdenar
+            // 
+            this.lblOrdenar.AutoSize = true;
+            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
+            this.lblOrdenar.Name = "lblOrdenar";
+            this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
+            this.lblOrdenar.TabIndex = 5;
+            this.lblOrdenar.Text = "0:0";
+            // 
+            // RadixSort
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "RadixSort";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(851, 601);
+            this.Controls.Add(this.gbTiempo);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btnOrdenar);
+            this.Controls.Add(this.btnGenerar);
+            this.Controls.Add(this.lbOrd);
+            this.Controls.Add(this.lbNum);
+            this.Controls.Add(this.txtMax);
+            this.Controls.Add(this.txtMin);
+            this.Controls.Add(this.txtNum);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblNum);
+            this.Controls.Add(this.lblMin);
+            this.Controls.Add(this.lblMax);
+            this.Name = "RadixSort";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Radix Sort";
+            this.gbTiempo.ResumeLayout(false);
+            this.gbTiempo.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblMax;
+        private System.Windows.Forms.Label lblMin;
+        private System.Windows.Forms.Label lblNum;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.TextBox txtMin;
+        private System.Windows.Forms.TextBox txtMax;
+        private System.Windows.Forms.ListBox lbNum;
+        private System.Windows.Forms.ListBox lbOrd;
+        private System.Windows.Forms.Button btnGenerar;
+        private System.Windows.Forms.Button btnOrdenar;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.GroupBox gbTiempo;
+        private System.Windows.Forms.Label lblOrdenar;
+        private System.Windows.Forms.Label lblOrd;
+        private System.Windows.Forms.Label lblComparaciones;
+        private System.Windows.Forms.Label lblIntercambios;
+        private System.Windows.Forms.Label lblCom;
+        private System.Windows.Forms.Label lblInv;
     }
 }

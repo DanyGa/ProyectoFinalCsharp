@@ -42,12 +42,12 @@
             this.txtMin = new System.Windows.Forms.TextBox();
             this.txtMax = new System.Windows.Forms.TextBox();
             this.gbTiempo = new System.Windows.Forms.GroupBox();
-            this.lblInt = new System.Windows.Forms.Label();
-            this.lblCom = new System.Windows.Forms.Label();
-            this.lblOrd = new System.Windows.Forms.Label();
-            this.lblIntercambios = new System.Windows.Forms.Label();
-            this.lblComparaciones = new System.Windows.Forms.Label();
             this.lblOrdenar = new System.Windows.Forms.Label();
+            this.lblComparaciones = new System.Windows.Forms.Label();
+            this.lblIntercambios = new System.Windows.Forms.Label();
+            this.lblOrd = new System.Windows.Forms.Label();
+            this.lblCom = new System.Windows.Forms.Label();
+            this.lblInt = new System.Windows.Forms.Label();
             this.gbTiempo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -209,41 +209,14 @@
             this.gbTiempo.TabIndex = 12;
             this.gbTiempo.TabStop = false;
             // 
-            // lblInt
+            // lblOrdenar
             // 
-            this.lblInt.AutoSize = true;
-            this.lblInt.Location = new System.Drawing.Point(14, 18);
-            this.lblInt.Name = "lblInt";
-            this.lblInt.Size = new System.Drawing.Size(133, 22);
-            this.lblInt.TabIndex = 0;
-            this.lblInt.Text = "Intercambios:";
-            // 
-            // lblCom
-            // 
-            this.lblCom.AutoSize = true;
-            this.lblCom.Location = new System.Drawing.Point(14, 64);
-            this.lblCom.Name = "lblCom";
-            this.lblCom.Size = new System.Drawing.Size(155, 22);
-            this.lblCom.TabIndex = 1;
-            this.lblCom.Text = "Comparaciones:";
-            // 
-            // lblOrd
-            // 
-            this.lblOrd.AutoSize = true;
-            this.lblOrd.Location = new System.Drawing.Point(14, 110);
-            this.lblOrd.Name = "lblOrd";
-            this.lblOrd.Size = new System.Drawing.Size(90, 22);
-            this.lblOrd.TabIndex = 2;
-            this.lblOrd.Text = "Ordenar:";
-            // 
-            // lblIntercambios
-            // 
-            this.lblIntercambios.AutoSize = true;
-            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
-            this.lblIntercambios.Name = "lblIntercambios";
-            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
-            this.lblIntercambios.TabIndex = 3;
-            this.lblIntercambios.Text = "0";
+            this.lblOrdenar.AutoSize = true;
+            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
+            this.lblOrdenar.Name = "lblOrdenar";
+            this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
+            this.lblOrdenar.TabIndex = 5;
+            this.lblOrdenar.Text = "0:0";
             // 
             // lblComparaciones
             // 
@@ -254,14 +227,41 @@
             this.lblComparaciones.TabIndex = 4;
             this.lblComparaciones.Text = "0";
             // 
-            // lblOrdenar
+            // lblIntercambios
             // 
-            this.lblOrdenar.AutoSize = true;
-            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
-            this.lblOrdenar.Name = "lblOrdenar";
-            this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
-            this.lblOrdenar.TabIndex = 5;
-            this.lblOrdenar.Text = "0:0";
+            this.lblIntercambios.AutoSize = true;
+            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
+            this.lblIntercambios.Name = "lblIntercambios";
+            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
+            this.lblIntercambios.TabIndex = 3;
+            this.lblIntercambios.Text = "0";
+            // 
+            // lblOrd
+            // 
+            this.lblOrd.AutoSize = true;
+            this.lblOrd.Location = new System.Drawing.Point(14, 110);
+            this.lblOrd.Name = "lblOrd";
+            this.lblOrd.Size = new System.Drawing.Size(90, 22);
+            this.lblOrd.TabIndex = 2;
+            this.lblOrd.Text = "Ordenar:";
+            // 
+            // lblCom
+            // 
+            this.lblCom.AutoSize = true;
+            this.lblCom.Location = new System.Drawing.Point(14, 64);
+            this.lblCom.Name = "lblCom";
+            this.lblCom.Size = new System.Drawing.Size(155, 22);
+            this.lblCom.TabIndex = 1;
+            this.lblCom.Text = "Comparaciones:";
+            // 
+            // lblInt
+            // 
+            this.lblInt.AutoSize = true;
+            this.lblInt.Location = new System.Drawing.Point(14, 18);
+            this.lblInt.Name = "lblInt";
+            this.lblInt.Size = new System.Drawing.Size(133, 22);
+            this.lblInt.TabIndex = 0;
+            this.lblInt.Text = "Intercambios:";
             // 
             // BubbleSort
             // 

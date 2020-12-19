@@ -33,7 +33,9 @@ namespace ProyectoFinalCsharp
 
         private void btnGrafo_Click(object sender, EventArgs e)
         {
-
+            EstructurasdeDatos.Grafos.Grafos net = new EstructurasdeDatos.Grafos.Grafos();
+            net.Show();
+            Hide();
         }
 
         private void btnArbol_Click(object sender, EventArgs e)

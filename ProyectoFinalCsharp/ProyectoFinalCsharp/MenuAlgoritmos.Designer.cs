@@ -68,7 +68,7 @@
             this.btnBubble.BackColor = System.Drawing.Color.Snow;
             this.btnBubble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnBubble.ForeColor = System.Drawing.Color.Crimson;
-            this.btnBubble.Location = new System.Drawing.Point(78, 172);
+            this.btnBubble.Location = new System.Drawing.Point(97, 171);
             this.btnBubble.Name = "btnBubble";
             this.btnBubble.Size = new System.Drawing.Size(167, 67);
             this.btnBubble.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.btnCocktail.BackColor = System.Drawing.Color.Snow;
             this.btnCocktail.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnCocktail.ForeColor = System.Drawing.Color.Crimson;
-            this.btnCocktail.Location = new System.Drawing.Point(78, 260);
+            this.btnCocktail.Location = new System.Drawing.Point(97, 259);
             this.btnCocktail.Name = "btnCocktail";
             this.btnCocktail.Size = new System.Drawing.Size(167, 67);
             this.btnCocktail.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.btnCounting.BackColor = System.Drawing.Color.Snow;
             this.btnCounting.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnCounting.ForeColor = System.Drawing.Color.Crimson;
-            this.btnCounting.Location = new System.Drawing.Point(266, 260);
+            this.btnCounting.Location = new System.Drawing.Point(285, 259);
             this.btnCounting.Name = "btnCounting";
             this.btnCounting.Size = new System.Drawing.Size(167, 67);
             this.btnCounting.TabIndex = 4;
@@ -107,7 +107,7 @@
             this.btnShell.BackColor = System.Drawing.Color.Snow;
             this.btnShell.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnShell.ForeColor = System.Drawing.Color.Crimson;
-            this.btnShell.Location = new System.Drawing.Point(458, 351);
+            this.btnShell.Location = new System.Drawing.Point(477, 259);
             this.btnShell.Name = "btnShell";
             this.btnShell.Size = new System.Drawing.Size(167, 67);
             this.btnShell.TabIndex = 5;
@@ -120,7 +120,7 @@
             this.btnInsertion.BackColor = System.Drawing.Color.Snow;
             this.btnInsertion.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnInsertion.ForeColor = System.Drawing.Color.Crimson;
-            this.btnInsertion.Location = new System.Drawing.Point(78, 351);
+            this.btnInsertion.Location = new System.Drawing.Point(285, 171);
             this.btnInsertion.Name = "btnInsertion";
             this.btnInsertion.Size = new System.Drawing.Size(167, 67);
             this.btnInsertion.TabIndex = 6;
@@ -133,7 +133,7 @@
             this.btnRadix.BackColor = System.Drawing.Color.Snow;
             this.btnRadix.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnRadix.ForeColor = System.Drawing.Color.Crimson;
-            this.btnRadix.Location = new System.Drawing.Point(458, 260);
+            this.btnRadix.Location = new System.Drawing.Point(477, 171);
             this.btnRadix.Name = "btnRadix";
             this.btnRadix.Size = new System.Drawing.Size(167, 67);
             this.btnRadix.TabIndex = 7;
@@ -146,7 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(784, 485);
+            this.ClientSize = new System.Drawing.Size(784, 404);
             this.Controls.Add(this.btnRadix);
             this.Controls.Add(this.btnInsertion);
             this.Controls.Add(this.btnShell);

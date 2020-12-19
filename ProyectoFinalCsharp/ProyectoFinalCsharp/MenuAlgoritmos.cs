@@ -33,22 +33,22 @@ namespace ProyectoFinalCsharp
 
         private void btnCounting_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.CountingSort o = new AlgoritmosdeOrdenamiento.CountingSort();
-            o.Show();
+            AlgoritmosdeOrdenamiento.CountingSort sa = new AlgoritmosdeOrdenamiento.CountingSort();
+            sa.Show();
             Hide();
         }
 
         private void btnRadix_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.RadixSort pal = new AlgoritmosdeOrdenamiento.RadixSort();
-            pal.Show();
+            AlgoritmosdeOrdenamiento.RadixSort o = new AlgoritmosdeOrdenamiento.RadixSort();
+            o.Show();
             Hide();
         }
 
         private void btnShell_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.ShellSort gu = new AlgoritmosdeOrdenamiento.ShellSort();
-            gu.Show();
+            AlgoritmosdeOrdenamiento.ShellSort yuk = new AlgoritmosdeOrdenamiento.ShellSort();
+            yuk.Show();
             Hide();
         }
 

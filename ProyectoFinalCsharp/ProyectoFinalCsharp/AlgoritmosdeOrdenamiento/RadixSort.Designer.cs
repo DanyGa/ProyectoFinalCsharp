@@ -43,10 +43,6 @@
             this.gbTiempo = new System.Windows.Forms.GroupBox();
             this.lblOrdenar = new System.Windows.Forms.Label();
             this.lblOrd = new System.Windows.Forms.Label();
-            this.lblComparaciones = new System.Windows.Forms.Label();
-            this.lblIntercambios = new System.Windows.Forms.Label();
-            this.lblCom = new System.Windows.Forms.Label();
-            this.lblInv = new System.Windows.Forms.Label();
             this.gbTiempo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,6 +164,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
+            this.btnOrdenar.Enabled = false;
             this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnOrdenar.ForeColor = System.Drawing.Color.Peru;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
@@ -196,22 +193,18 @@
             this.gbTiempo.BackColor = System.Drawing.Color.Snow;
             this.gbTiempo.Controls.Add(this.lblOrdenar);
             this.gbTiempo.Controls.Add(this.lblOrd);
-            this.gbTiempo.Controls.Add(this.lblComparaciones);
-            this.gbTiempo.Controls.Add(this.lblIntercambios);
-            this.gbTiempo.Controls.Add(this.lblCom);
-            this.gbTiempo.Controls.Add(this.lblInv);
             this.gbTiempo.Font = new System.Drawing.Font("Britannic Bold", 12F);
             this.gbTiempo.ForeColor = System.Drawing.Color.Peru;
-            this.gbTiempo.Location = new System.Drawing.Point(23, 401);
+            this.gbTiempo.Location = new System.Drawing.Point(23, 437);
             this.gbTiempo.Name = "gbTiempo";
-            this.gbTiempo.Size = new System.Drawing.Size(406, 143);
+            this.gbTiempo.Size = new System.Drawing.Size(406, 58);
             this.gbTiempo.TabIndex = 12;
             this.gbTiempo.TabStop = false;
             // 
             // lblOrdenar
             // 
             this.lblOrdenar.AutoSize = true;
-            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
+            this.lblOrdenar.Location = new System.Drawing.Point(121, 18);
             this.lblOrdenar.Name = "lblOrdenar";
             this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
             this.lblOrdenar.TabIndex = 5;
@@ -220,47 +213,11 @@
             // lblOrd
             // 
             this.lblOrd.AutoSize = true;
-            this.lblOrd.Location = new System.Drawing.Point(14, 110);
+            this.lblOrd.Location = new System.Drawing.Point(14, 18);
             this.lblOrd.Name = "lblOrd";
             this.lblOrd.Size = new System.Drawing.Size(90, 22);
             this.lblOrd.TabIndex = 4;
             this.lblOrd.Text = "Ordenar:";
-            // 
-            // lblComparaciones
-            // 
-            this.lblComparaciones.AutoSize = true;
-            this.lblComparaciones.Location = new System.Drawing.Point(188, 64);
-            this.lblComparaciones.Name = "lblComparaciones";
-            this.lblComparaciones.Size = new System.Drawing.Size(22, 22);
-            this.lblComparaciones.TabIndex = 3;
-            this.lblComparaciones.Text = "0";
-            // 
-            // lblIntercambios
-            // 
-            this.lblIntercambios.AutoSize = true;
-            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
-            this.lblIntercambios.Name = "lblIntercambios";
-            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
-            this.lblIntercambios.TabIndex = 2;
-            this.lblIntercambios.Text = "0";
-            // 
-            // lblCom
-            // 
-            this.lblCom.AutoSize = true;
-            this.lblCom.Location = new System.Drawing.Point(14, 64);
-            this.lblCom.Name = "lblCom";
-            this.lblCom.Size = new System.Drawing.Size(155, 22);
-            this.lblCom.TabIndex = 1;
-            this.lblCom.Text = "Comparaciones:";
-            // 
-            // lblInv
-            // 
-            this.lblInv.AutoSize = true;
-            this.lblInv.Location = new System.Drawing.Point(14, 18);
-            this.lblInv.Name = "lblInv";
-            this.lblInv.Size = new System.Drawing.Size(133, 22);
-            this.lblInv.TabIndex = 0;
-            this.lblInv.Text = "Intercambios:";
             // 
             // RadixSort
             // 
@@ -309,9 +266,5 @@
         private System.Windows.Forms.GroupBox gbTiempo;
         private System.Windows.Forms.Label lblOrdenar;
         private System.Windows.Forms.Label lblOrd;
-        private System.Windows.Forms.Label lblComparaciones;
-        private System.Windows.Forms.Label lblIntercambios;
-        private System.Windows.Forms.Label lblCom;
-        private System.Windows.Forms.Label lblInv;
     }
 }

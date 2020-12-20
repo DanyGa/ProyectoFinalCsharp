@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShellSort));
             this.lblMax = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblNum = new System.Windows.Forms.Label();
@@ -36,7 +35,7 @@
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtMin = new System.Windows.Forms.TextBox();
             this.txtMax = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbTiempo = new System.Windows.Forms.GroupBox();
             this.lblOrdenar = new System.Windows.Forms.Label();
             this.lblOrd = new System.Windows.Forms.Label();
             this.lblIntercambios = new System.Windows.Forms.Label();
@@ -46,7 +45,7 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.lbNum = new System.Windows.Forms.ListBox();
             this.lbOrd = new System.Windows.Forms.ListBox();
-            this.groupBox1.SuspendLayout();
+            this.gbTiempo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMax
@@ -127,20 +126,20 @@
             this.txtMax.Size = new System.Drawing.Size(116, 26);
             this.txtMax.TabIndex = 6;
             // 
-            // groupBox1
+            // gbTiempo
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Snow;
-            this.groupBox1.Controls.Add(this.lblOrdenar);
-            this.groupBox1.Controls.Add(this.lblOrd);
-            this.groupBox1.Controls.Add(this.lblIntercambios);
-            this.groupBox1.Controls.Add(this.lblInt);
-            this.groupBox1.Font = new System.Drawing.Font("Britannic Bold", 12F);
-            this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.groupBox1.Location = new System.Drawing.Point(23, 401);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 143);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
+            this.gbTiempo.BackColor = System.Drawing.Color.Snow;
+            this.gbTiempo.Controls.Add(this.lblOrdenar);
+            this.gbTiempo.Controls.Add(this.lblOrd);
+            this.gbTiempo.Controls.Add(this.lblIntercambios);
+            this.gbTiempo.Controls.Add(this.lblInt);
+            this.gbTiempo.Font = new System.Drawing.Font("Britannic Bold", 12F);
+            this.gbTiempo.ForeColor = System.Drawing.Color.Firebrick;
+            this.gbTiempo.Location = new System.Drawing.Point(23, 401);
+            this.gbTiempo.Name = "gbTiempo";
+            this.gbTiempo.Size = new System.Drawing.Size(406, 143);
+            this.gbTiempo.TabIndex = 7;
+            this.gbTiempo.TabStop = false;
             // 
             // lblOrdenar
             // 
@@ -181,7 +180,7 @@
             // btnGenerar
             // 
             this.btnGenerar.BackColor = System.Drawing.Color.Snow;
-            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnGenerar.Location = new System.Drawing.Point(66, 280);
             this.btnGenerar.Name = "btnGenerar";
@@ -194,7 +193,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
-            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -207,7 +206,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Snow;
-            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMenu.Location = new System.Drawing.Point(718, 521);
             this.btnMenu.Name = "btnMenu";
@@ -245,14 +244,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.ShellSort;
             this.ClientSize = new System.Drawing.Size(851, 601);
             this.Controls.Add(this.lbOrd);
             this.Controls.Add(this.lbNum);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.btnGenerar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbTiempo);
             this.Controls.Add(this.txtMax);
             this.Controls.Add(this.txtMin);
             this.Controls.Add(this.txtNum);
@@ -264,8 +263,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shell Sort";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShellSort_FormClosed);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbTiempo.ResumeLayout(false);
+            this.gbTiempo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,7 +279,7 @@
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.TextBox txtMin;
         private System.Windows.Forms.TextBox txtMax;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbTiempo;
         private System.Windows.Forms.Label lblOrdenar;
         private System.Windows.Forms.Label lblOrd;
         private System.Windows.Forms.Label lblIntercambios;

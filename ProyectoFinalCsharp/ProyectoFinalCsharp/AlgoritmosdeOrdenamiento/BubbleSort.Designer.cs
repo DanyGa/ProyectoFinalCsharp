@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BubbleSort));
             this.lblNum = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblMax = new System.Windows.Forms.Label();
@@ -267,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.BubbleSort;
             this.ClientSize = new System.Drawing.Size(851, 601);
             this.Controls.Add(this.gbTiempo);
             this.Controls.Add(this.txtMax);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadixSort));
             this.lblMax = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblNum = new System.Windows.Forms.Label();
@@ -156,7 +155,7 @@
             // btnGenerar
             // 
             this.btnGenerar.BackColor = System.Drawing.Color.Snow;
-            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnGenerar.ForeColor = System.Drawing.Color.Peru;
             this.btnGenerar.Location = new System.Drawing.Point(66, 280);
             this.btnGenerar.Name = "btnGenerar";
@@ -169,7 +168,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
-            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnOrdenar.ForeColor = System.Drawing.Color.Peru;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -182,7 +181,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Snow;
-            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnMenu.ForeColor = System.Drawing.Color.Peru;
             this.btnMenu.Location = new System.Drawing.Point(718, 521);
             this.btnMenu.Name = "btnMenu";
@@ -267,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.RadixSort;
             this.ClientSize = new System.Drawing.Size(851, 601);
             this.Controls.Add(this.gbTiempo);
             this.Controls.Add(this.btnMenu);

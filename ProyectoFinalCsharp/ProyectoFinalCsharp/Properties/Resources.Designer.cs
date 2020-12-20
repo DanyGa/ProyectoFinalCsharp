@@ -63,9 +63,39 @@ namespace ProyectoFinalCsharp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BubbleSort {
+            get {
+                object obj = ResourceManager.GetObject("BubbleSort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CocktailSort {
+            get {
+                object obj = ResourceManager.GetObject("CocktailSort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Colas {
             get {
                 object obj = ResourceManager.GetObject("Colas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CountingSort {
+            get {
+                object obj = ResourceManager.GetObject("CountingSort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,26 @@ namespace ProyectoFinalCsharp.Properties {
         internal static System.Drawing.Bitmap Pilas {
             get {
                 object obj = ResourceManager.GetObject("Pilas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RadixSort {
+            get {
+                object obj = ResourceManager.GetObject("RadixSort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShellSort {
+            get {
+                object obj = ResourceManager.GetObject("ShellSort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

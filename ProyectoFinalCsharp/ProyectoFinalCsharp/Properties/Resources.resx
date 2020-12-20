@@ -121,17 +121,20 @@
   <data name="MenuAlgoritmos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MenuAlgoritmos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MenuEstructuras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuEstructuras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ListaSimpleCircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ListaSimpleCircular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Colas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Colas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MenuListas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MenuListas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ListaSimpleCircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ListaSimpleCircular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ListaDoble" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaDoble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BubbleSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BubbleSort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ListaDobleCircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaDobleCircular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,7 +148,19 @@
   <data name="MenuPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MenuPrincipal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Colas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Colas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MenuEstructuras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuEstructuras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CocktailSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CocktailSort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CountingSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CountingSort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadixSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadixSort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShellSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShellSort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

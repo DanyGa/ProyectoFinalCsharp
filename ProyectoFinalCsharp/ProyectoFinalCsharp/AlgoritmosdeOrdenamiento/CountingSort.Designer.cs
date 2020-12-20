@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountingSort));
             this.lblNum = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblMax = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbTiempo = new System.Windows.Forms.GroupBox();
-            this.lblOrd = new System.Windows.Forms.Label();
             this.lblOrdenar = new System.Windows.Forms.Label();
+            this.lblOrd = new System.Windows.Forms.Label();
             this.lbNum = new System.Windows.Forms.ListBox();
             this.lbOrd = new System.Windows.Forms.ListBox();
             this.txtNum = new System.Windows.Forms.TextBox();
@@ -108,15 +107,6 @@
             this.gbTiempo.TabIndex = 4;
             this.gbTiempo.TabStop = false;
             // 
-            // lblOrd
-            // 
-            this.lblOrd.AutoSize = true;
-            this.lblOrd.Location = new System.Drawing.Point(19, 37);
-            this.lblOrd.Name = "lblOrd";
-            this.lblOrd.Size = new System.Drawing.Size(90, 22);
-            this.lblOrd.TabIndex = 0;
-            this.lblOrd.Text = "Ordenar:";
-            // 
             // lblOrdenar
             // 
             this.lblOrdenar.AutoSize = true;
@@ -125,6 +115,15 @@
             this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
             this.lblOrdenar.TabIndex = 1;
             this.lblOrdenar.Text = "0:0";
+            // 
+            // lblOrd
+            // 
+            this.lblOrd.AutoSize = true;
+            this.lblOrd.Location = new System.Drawing.Point(19, 37);
+            this.lblOrd.Name = "lblOrd";
+            this.lblOrd.Size = new System.Drawing.Size(90, 22);
+            this.lblOrd.TabIndex = 0;
+            this.lblOrd.Text = "Ordenar:";
             // 
             // lbNum
             // 
@@ -223,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.CountingSort;
             this.ClientSize = new System.Drawing.Size(851, 601);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnOrdenar);

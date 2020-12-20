@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAlgoritmos));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblIns = new System.Windows.Forms.Label();
             this.btnBubble = new System.Windows.Forms.Button();
             this.btnCocktail = new System.Windows.Forms.Button();
             this.btnCounting = new System.Windows.Forms.Button();
@@ -51,17 +51,17 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Algoritmos de Ordenamiento";
             // 
-            // label2
+            // lblIns
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Snow;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(166, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(406, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Selecciona un tipo de Algoritmo";
+            this.lblIns.AutoSize = true;
+            this.lblIns.BackColor = System.Drawing.Color.Snow;
+            this.lblIns.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblIns.ForeColor = System.Drawing.Color.Crimson;
+            this.lblIns.Location = new System.Drawing.Point(166, 74);
+            this.lblIns.Name = "lblIns";
+            this.lblIns.Size = new System.Drawing.Size(406, 30);
+            this.lblIns.TabIndex = 1;
+            this.lblIns.Text = "Selecciona un tipo de Algoritmo";
             // 
             // btnBubble
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.btnCounting);
             this.Controls.Add(this.btnCocktail);
             this.Controls.Add(this.btnBubble);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblIns);
             this.Controls.Add(this.lblTitulo);
             this.Name = "MenuAlgoritmos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -167,7 +167,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblIns;
         private System.Windows.Forms.Button btnBubble;
         private System.Windows.Forms.Button btnCocktail;
         private System.Windows.Forms.Button btnCounting;

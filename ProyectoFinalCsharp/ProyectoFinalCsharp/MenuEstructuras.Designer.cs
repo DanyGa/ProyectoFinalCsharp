@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuEstructuras));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblIns = new System.Windows.Forms.Label();
             this.btnPila = new System.Windows.Forms.Button();
             this.btnCola = new System.Windows.Forms.Button();
             this.btnListas = new System.Windows.Forms.Button();
@@ -50,17 +50,17 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Estructuras de Datos";
             // 
-            // label2
+            // lblIns
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Snow;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Olive;
-            this.label2.Location = new System.Drawing.Point(166, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(414, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Selecciona un tipo de Estructura\r\n";
+            this.lblIns.AutoSize = true;
+            this.lblIns.BackColor = System.Drawing.Color.Snow;
+            this.lblIns.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblIns.ForeColor = System.Drawing.Color.Olive;
+            this.lblIns.Location = new System.Drawing.Point(166, 74);
+            this.lblIns.Name = "lblIns";
+            this.lblIns.Size = new System.Drawing.Size(414, 30);
+            this.lblIns.TabIndex = 1;
+            this.lblIns.Text = "Selecciona un tipo de Estructura\r\n";
             // 
             // btnPila
             // 
@@ -138,7 +138,7 @@
             this.Controls.Add(this.btnListas);
             this.Controls.Add(this.btnCola);
             this.Controls.Add(this.btnPila);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblIns);
             this.Controls.Add(this.lblTitulo);
             this.Name = "MenuEstructuras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -152,7 +152,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblIns;
         private System.Windows.Forms.Button btnPila;
         private System.Windows.Forms.Button btnCola;
         private System.Windows.Forms.Button btnListas;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pilas));
             this.lblPila = new System.Windows.Forms.Label();
             this.lblThis = new System.Windows.Forms.Label();
             this.lblDato = new System.Windows.Forms.Label();
@@ -199,7 +198,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(951, 481);
             this.Controls.Add(this.btnPop);
             this.Controls.Add(this.btnPush);

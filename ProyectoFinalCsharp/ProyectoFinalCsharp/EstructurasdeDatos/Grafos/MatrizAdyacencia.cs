@@ -41,10 +41,5 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
                 }
             }
         }
-
-        private void MatrizAdyacencia_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

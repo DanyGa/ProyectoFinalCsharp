@@ -67,7 +67,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
             this.Name = "MatrizAdyacencia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matriz Adyacencia";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MatrizAdyacencia_FormClosed);
             this.Load += new System.EventHandler(this.MatrizAdyacencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);

@@ -18,7 +18,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         }
 
         Graphics dibujo;
-
         public void dibuja()
         {
             List<NodoGrafo> aux = new List<NodoGrafo>();
@@ -72,6 +71,7 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
                 }
             }
         }
+
 
         private void grafo1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -247,8 +247,8 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
             }
 
             acciones1();
-        
         }
+
 
         bool minicio = false;
         int xinicio = 0;
@@ -313,7 +313,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         }
 
         List<NodoGrafo> auxmover;
-
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             int xxdif;

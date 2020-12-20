@@ -32,8 +32,8 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
         public int Ordenar(int n)
         {
             int aux;
-            int intercambios = 0;
             int comparaciones = 0;
+            int intercambios = 0;
             int j = vector.Length / 2;
             int x;
 

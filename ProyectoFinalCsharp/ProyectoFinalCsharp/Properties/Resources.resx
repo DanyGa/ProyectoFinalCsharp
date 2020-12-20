@@ -127,12 +127,6 @@
   <data name="MenuListas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MenuListas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MenuPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuPrincipal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pilas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pilas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ListaSimpleCircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaSimpleCircular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,7 +136,16 @@
   <data name="ListaDobleCircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaDobleCircular.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Pilas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pilas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ListaSimple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaSimple.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuPrincipal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Colas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Colas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

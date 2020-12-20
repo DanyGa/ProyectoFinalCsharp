@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblListas = new System.Windows.Forms.Label();
-            this.lblInstruccion = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblIns = new System.Windows.Forms.Label();
             this.btnSimple = new System.Windows.Forms.Button();
             this.btnSCircular = new System.Windows.Forms.Button();
             this.btnDoble = new System.Windows.Forms.Button();
@@ -37,29 +37,29 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblListas
+            // lblTitulo
             // 
-            this.lblListas.AutoSize = true;
-            this.lblListas.BackColor = System.Drawing.Color.Snow;
-            this.lblListas.Font = new System.Drawing.Font("Elephant", 25.8F, System.Drawing.FontStyle.Bold);
-            this.lblListas.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblListas.Location = new System.Drawing.Point(246, 44);
-            this.lblListas.Name = "lblListas";
-            this.lblListas.Size = new System.Drawing.Size(164, 55);
-            this.lblListas.TabIndex = 0;
-            this.lblListas.Text = "Listas";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Snow;
+            this.lblTitulo.Font = new System.Drawing.Font("Elephant", 25.8F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblTitulo.Location = new System.Drawing.Point(246, 44);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(164, 55);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Listas";
             // 
-            // lblInstruccion
+            // lblIns
             // 
-            this.lblInstruccion.AutoSize = true;
-            this.lblInstruccion.BackColor = System.Drawing.Color.Snow;
-            this.lblInstruccion.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblInstruccion.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblInstruccion.Location = new System.Drawing.Point(153, 99);
-            this.lblInstruccion.Name = "lblInstruccion";
-            this.lblInstruccion.Size = new System.Drawing.Size(346, 30);
-            this.lblInstruccion.TabIndex = 1;
-            this.lblInstruccion.Text = "Selecciona un tipo de Lista";
+            this.lblIns.AutoSize = true;
+            this.lblIns.BackColor = System.Drawing.Color.Snow;
+            this.lblIns.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblIns.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblIns.Location = new System.Drawing.Point(153, 99);
+            this.lblIns.Name = "lblIns";
+            this.lblIns.Size = new System.Drawing.Size(346, 30);
+            this.lblIns.TabIndex = 1;
+            this.lblIns.Text = "Selecciona un tipo de Lista";
             // 
             // btnSimple
             // 
@@ -137,8 +137,8 @@
             this.Controls.Add(this.btnDoble);
             this.Controls.Add(this.btnSCircular);
             this.Controls.Add(this.btnSimple);
-            this.Controls.Add(this.lblInstruccion);
-            this.Controls.Add(this.lblListas);
+            this.Controls.Add(this.lblIns);
+            this.Controls.Add(this.lblTitulo);
             this.Name = "MenuListas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listas";
@@ -150,8 +150,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblListas;
-        private System.Windows.Forms.Label lblInstruccion;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblIns;
         private System.Windows.Forms.Button btnSimple;
         private System.Windows.Forms.Button btnSCircular;
         private System.Windows.Forms.Button btnDoble;

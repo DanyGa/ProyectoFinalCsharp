@@ -63,6 +63,46 @@ namespace ProyectoFinalCsharp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ListaDoble {
+            get {
+                object obj = ResourceManager.GetObject("ListaDoble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ListaDobleCircular {
+            get {
+                object obj = ResourceManager.GetObject("ListaDobleCircular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ListaSimple {
+            get {
+                object obj = ResourceManager.GetObject("ListaSimple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ListaSimpleCircular {
+            get {
+                object obj = ResourceManager.GetObject("ListaSimpleCircular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MenuAlgoritmos {
             get {
                 object obj = ResourceManager.GetObject("MenuAlgoritmos", resourceCulture);

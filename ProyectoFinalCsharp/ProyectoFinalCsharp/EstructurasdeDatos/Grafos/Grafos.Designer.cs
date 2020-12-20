@@ -69,7 +69,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.menuStrip1.BackColor = System.Drawing.Color.Snow;
             this.menuStrip1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -85,7 +85,7 @@
             // 
             // archivoToolStripMenuItem
             // 
-            this.archivoToolStripMenuItem.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.archivoToolStripMenuItem.BackColor = System.Drawing.Color.Snow;
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem,
             this.borrarToolStripMenuItem});
@@ -130,7 +130,7 @@
             // 
             // nodoToolStripMenuItem
             // 
-            this.nodoToolStripMenuItem.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.nodoToolStripMenuItem.BackColor = System.Drawing.Color.Snow;
             this.nodoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
             this.moverTodoToolStripMenuItem,
@@ -219,7 +219,7 @@
             // 
             // matrizToolStripMenuItem
             // 
-            this.matrizToolStripMenuItem.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.matrizToolStripMenuItem.BackColor = System.Drawing.Color.Snow;
             this.matrizToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adyacenciaToolStripMenuItem,
             this.pesoToolStripMenuItem});

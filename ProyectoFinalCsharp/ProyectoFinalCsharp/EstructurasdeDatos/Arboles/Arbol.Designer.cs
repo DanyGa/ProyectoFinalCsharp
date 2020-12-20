@@ -39,10 +39,10 @@
             this.btnCargar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.gbRecorrer = new System.Windows.Forms.GroupBox();
-            this.rbtnOrden = new System.Windows.Forms.RadioButton();
-            this.rbtnPreOrden = new System.Windows.Forms.RadioButton();
-            this.rbtnPostOrden = new System.Windows.Forms.RadioButton();
             this.btnRecorrer = new System.Windows.Forms.Button();
+            this.rbtnPostOrden = new System.Windows.Forms.RadioButton();
+            this.rbtnPreOrden = new System.Windows.Forms.RadioButton();
+            this.rbtnOrden = new System.Windows.Forms.RadioButton();
             this.lblDato = new System.Windows.Forms.Label();
             this.gbRecorrer.SuspendLayout();
             this.SuspendLayout();
@@ -189,27 +189,17 @@
             this.gbRecorrer.TabStop = false;
             this.gbRecorrer.Text = "Recorrer:";
             // 
-            // rbtnOrden
+            // btnRecorrer
             // 
-            this.rbtnOrden.AutoSize = true;
-            this.rbtnOrden.Location = new System.Drawing.Point(19, 44);
-            this.rbtnOrden.Name = "rbtnOrden";
-            this.rbtnOrden.Size = new System.Drawing.Size(85, 26);
-            this.rbtnOrden.TabIndex = 0;
-            this.rbtnOrden.TabStop = true;
-            this.rbtnOrden.Text = "Orden";
-            this.rbtnOrden.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPreOrden
-            // 
-            this.rbtnPreOrden.AutoSize = true;
-            this.rbtnPreOrden.Location = new System.Drawing.Point(19, 89);
-            this.rbtnPreOrden.Name = "rbtnPreOrden";
-            this.rbtnPreOrden.Size = new System.Drawing.Size(122, 26);
-            this.rbtnPreOrden.TabIndex = 1;
-            this.rbtnPreOrden.TabStop = true;
-            this.rbtnPreOrden.Text = "Pre Orden";
-            this.rbtnPreOrden.UseVisualStyleBackColor = true;
+            this.btnRecorrer.BackColor = System.Drawing.Color.Snow;
+            this.btnRecorrer.ForeColor = System.Drawing.Color.Plum;
+            this.btnRecorrer.Location = new System.Drawing.Point(60, 175);
+            this.btnRecorrer.Name = "btnRecorrer";
+            this.btnRecorrer.Size = new System.Drawing.Size(144, 43);
+            this.btnRecorrer.TabIndex = 3;
+            this.btnRecorrer.Text = "Recorrer";
+            this.btnRecorrer.UseVisualStyleBackColor = false;
+            this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
             // 
             // rbtnPostOrden
             // 
@@ -222,17 +212,27 @@
             this.rbtnPostOrden.Text = "Post Orden";
             this.rbtnPostOrden.UseVisualStyleBackColor = true;
             // 
-            // btnRecorrer
+            // rbtnPreOrden
             // 
-            this.btnRecorrer.BackColor = System.Drawing.Color.Snow;
-            this.btnRecorrer.ForeColor = System.Drawing.Color.Plum;
-            this.btnRecorrer.Location = new System.Drawing.Point(60, 175);
-            this.btnRecorrer.Name = "btnRecorrer";
-            this.btnRecorrer.Size = new System.Drawing.Size(144, 43);
-            this.btnRecorrer.TabIndex = 3;
-            this.btnRecorrer.Text = "Recorrer";
-            this.btnRecorrer.UseVisualStyleBackColor = false;
-            this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
+            this.rbtnPreOrden.AutoSize = true;
+            this.rbtnPreOrden.Location = new System.Drawing.Point(19, 89);
+            this.rbtnPreOrden.Name = "rbtnPreOrden";
+            this.rbtnPreOrden.Size = new System.Drawing.Size(122, 26);
+            this.rbtnPreOrden.TabIndex = 1;
+            this.rbtnPreOrden.TabStop = true;
+            this.rbtnPreOrden.Text = "Pre Orden";
+            this.rbtnPreOrden.UseVisualStyleBackColor = true;
+            // 
+            // rbtnOrden
+            // 
+            this.rbtnOrden.AutoSize = true;
+            this.rbtnOrden.Location = new System.Drawing.Point(19, 44);
+            this.rbtnOrden.Name = "rbtnOrden";
+            this.rbtnOrden.Size = new System.Drawing.Size(85, 26);
+            this.rbtnOrden.TabIndex = 0;
+            this.rbtnOrden.TabStop = true;
+            this.rbtnOrden.Text = "Orden";
+            this.rbtnOrden.UseVisualStyleBackColor = true;
             // 
             // lblDato
             // 

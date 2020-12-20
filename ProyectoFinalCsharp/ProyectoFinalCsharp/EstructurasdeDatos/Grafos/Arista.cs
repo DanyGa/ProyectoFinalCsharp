@@ -3,7 +3,7 @@ using InputKey;
 
 namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
 {
-    class Arista
+    public class Arista
     {
         int origen;
         int destino;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
 {
-    class NodoGrafo
+    public class NodoGrafo
     {
         public List<Arista> aristas = new List<Arista>();
         int posx;

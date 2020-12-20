@@ -83,6 +83,16 @@ namespace ProyectoFinalCsharp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MenuListas {
+            get {
+                object obj = ResourceManager.GetObject("MenuListas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MenuPrincipal {
             get {
                 object obj = ResourceManager.GetObject("MenuPrincipal", resourceCulture);

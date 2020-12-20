@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuListas));
             this.lblListas = new System.Windows.Forms.Label();
             this.lblInstruccion = new System.Windows.Forms.Label();
             this.btnSimple = new System.Windows.Forms.Button();
@@ -131,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.MenuListas;
             this.ClientSize = new System.Drawing.Size(730, 464);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnDCircular);

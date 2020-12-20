@@ -45,6 +45,8 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.lbNum = new System.Windows.Forms.ListBox();
             this.lbOrd = new System.Windows.Forms.ListBox();
+            this.lblCom = new System.Windows.Forms.Label();
+            this.lblComparaciones = new System.Windows.Forms.Label();
             this.gbTiempo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,6 +131,8 @@
             // gbTiempo
             // 
             this.gbTiempo.BackColor = System.Drawing.Color.Snow;
+            this.gbTiempo.Controls.Add(this.lblComparaciones);
+            this.gbTiempo.Controls.Add(this.lblCom);
             this.gbTiempo.Controls.Add(this.lblOrdenar);
             this.gbTiempo.Controls.Add(this.lblOrd);
             this.gbTiempo.Controls.Add(this.lblIntercambios);
@@ -144,7 +148,7 @@
             // lblOrdenar
             // 
             this.lblOrdenar.AutoSize = true;
-            this.lblOrdenar.Location = new System.Drawing.Point(157, 88);
+            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
             this.lblOrdenar.Name = "lblOrdenar";
             this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
             this.lblOrdenar.TabIndex = 3;
@@ -153,7 +157,7 @@
             // lblOrd
             // 
             this.lblOrd.AutoSize = true;
-            this.lblOrd.Location = new System.Drawing.Point(39, 88);
+            this.lblOrd.Location = new System.Drawing.Point(14, 110);
             this.lblOrd.Name = "lblOrd";
             this.lblOrd.Size = new System.Drawing.Size(90, 22);
             this.lblOrd.TabIndex = 2;
@@ -162,7 +166,7 @@
             // lblIntercambios
             // 
             this.lblIntercambios.AutoSize = true;
-            this.lblIntercambios.Location = new System.Drawing.Point(200, 39);
+            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
             this.lblIntercambios.Name = "lblIntercambios";
             this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
             this.lblIntercambios.TabIndex = 1;
@@ -171,7 +175,7 @@
             // lblInt
             // 
             this.lblInt.AutoSize = true;
-            this.lblInt.Location = new System.Drawing.Point(40, 39);
+            this.lblInt.Location = new System.Drawing.Point(14, 18);
             this.lblInt.Name = "lblInt";
             this.lblInt.Size = new System.Drawing.Size(133, 22);
             this.lblInt.TabIndex = 0;
@@ -193,6 +197,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
+            this.btnOrdenar.Enabled = false;
             this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
@@ -239,6 +244,24 @@
             this.lbOrd.Name = "lbOrd";
             this.lbOrd.Size = new System.Drawing.Size(110, 365);
             this.lbOrd.TabIndex = 12;
+            // 
+            // lblCom
+            // 
+            this.lblCom.AutoSize = true;
+            this.lblCom.Location = new System.Drawing.Point(14, 64);
+            this.lblCom.Name = "lblCom";
+            this.lblCom.Size = new System.Drawing.Size(155, 22);
+            this.lblCom.TabIndex = 4;
+            this.lblCom.Text = "Comparaciones:";
+            // 
+            // lblComparaciones
+            // 
+            this.lblComparaciones.AutoSize = true;
+            this.lblComparaciones.Location = new System.Drawing.Point(188, 64);
+            this.lblComparaciones.Name = "lblComparaciones";
+            this.lblComparaciones.Size = new System.Drawing.Size(22, 22);
+            this.lblComparaciones.TabIndex = 5;
+            this.lblComparaciones.Text = "0";
             // 
             // ShellSort
             // 
@@ -289,5 +312,7 @@
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.ListBox lbNum;
         private System.Windows.Forms.ListBox lbOrd;
+        private System.Windows.Forms.Label lblComparaciones;
+        private System.Windows.Forms.Label lblCom;
     }
 }

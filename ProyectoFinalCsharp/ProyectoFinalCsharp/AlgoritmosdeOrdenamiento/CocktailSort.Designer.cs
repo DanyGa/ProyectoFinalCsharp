@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CocktailSort));
             this.lblNum = new System.Windows.Forms.Label();
             this.lblMax = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
@@ -41,12 +40,12 @@
             this.lbNum = new System.Windows.Forms.ListBox();
             this.lbOrd = new System.Windows.Forms.ListBox();
             this.gbTiempo = new System.Windows.Forms.GroupBox();
-            this.lblInt = new System.Windows.Forms.Label();
-            this.lblIntercambios = new System.Windows.Forms.Label();
-            this.lblCom = new System.Windows.Forms.Label();
-            this.lblComparaciones = new System.Windows.Forms.Label();
-            this.lblOrd = new System.Windows.Forms.Label();
             this.lblOrdenar = new System.Windows.Forms.Label();
+            this.lblOrd = new System.Windows.Forms.Label();
+            this.lblComparaciones = new System.Windows.Forms.Label();
+            this.lblCom = new System.Windows.Forms.Label();
+            this.lblIntercambios = new System.Windows.Forms.Label();
+            this.lblInt = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.gbTiempo.SuspendLayout();
             this.SuspendLayout();
@@ -102,7 +101,7 @@
             // btnGenerar
             // 
             this.btnGenerar.BackColor = System.Drawing.Color.Snow;
-            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnGenerar.ForeColor = System.Drawing.Color.DarkRed;
             this.btnGenerar.Location = new System.Drawing.Point(66, 280);
             this.btnGenerar.Name = "btnGenerar";
@@ -115,7 +114,8 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
-            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenar.Enabled = false;
+            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnOrdenar.ForeColor = System.Drawing.Color.DarkRed;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -196,41 +196,14 @@
             this.gbTiempo.TabIndex = 12;
             this.gbTiempo.TabStop = false;
             // 
-            // lblInt
+            // lblOrdenar
             // 
-            this.lblInt.AutoSize = true;
-            this.lblInt.Location = new System.Drawing.Point(14, 18);
-            this.lblInt.Name = "lblInt";
-            this.lblInt.Size = new System.Drawing.Size(133, 22);
-            this.lblInt.TabIndex = 0;
-            this.lblInt.Text = "Intercambios:";
-            // 
-            // lblIntercambios
-            // 
-            this.lblIntercambios.AutoSize = true;
-            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
-            this.lblIntercambios.Name = "lblIntercambios";
-            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
-            this.lblIntercambios.TabIndex = 1;
-            this.lblIntercambios.Text = "0";
-            // 
-            // lblCom
-            // 
-            this.lblCom.AutoSize = true;
-            this.lblCom.Location = new System.Drawing.Point(14, 64);
-            this.lblCom.Name = "lblCom";
-            this.lblCom.Size = new System.Drawing.Size(155, 22);
-            this.lblCom.TabIndex = 2;
-            this.lblCom.Text = "Comparaciones:";
-            // 
-            // lblComparaciones
-            // 
-            this.lblComparaciones.AutoSize = true;
-            this.lblComparaciones.Location = new System.Drawing.Point(188, 64);
-            this.lblComparaciones.Name = "lblComparaciones";
-            this.lblComparaciones.Size = new System.Drawing.Size(22, 22);
-            this.lblComparaciones.TabIndex = 3;
-            this.lblComparaciones.Text = "0";
+            this.lblOrdenar.AutoSize = true;
+            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
+            this.lblOrdenar.Name = "lblOrdenar";
+            this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
+            this.lblOrdenar.TabIndex = 5;
+            this.lblOrdenar.Text = "0:0";
             // 
             // lblOrd
             // 
@@ -241,19 +214,46 @@
             this.lblOrd.TabIndex = 4;
             this.lblOrd.Text = "Ordenar:";
             // 
-            // lblOrdenar
+            // lblComparaciones
             // 
-            this.lblOrdenar.AutoSize = true;
-            this.lblOrdenar.Location = new System.Drawing.Point(129, 110);
-            this.lblOrdenar.Name = "lblOrdenar";
-            this.lblOrdenar.Size = new System.Drawing.Size(40, 22);
-            this.lblOrdenar.TabIndex = 5;
-            this.lblOrdenar.Text = "0:0";
+            this.lblComparaciones.AutoSize = true;
+            this.lblComparaciones.Location = new System.Drawing.Point(188, 64);
+            this.lblComparaciones.Name = "lblComparaciones";
+            this.lblComparaciones.Size = new System.Drawing.Size(22, 22);
+            this.lblComparaciones.TabIndex = 3;
+            this.lblComparaciones.Text = "0";
+            // 
+            // lblCom
+            // 
+            this.lblCom.AutoSize = true;
+            this.lblCom.Location = new System.Drawing.Point(14, 64);
+            this.lblCom.Name = "lblCom";
+            this.lblCom.Size = new System.Drawing.Size(155, 22);
+            this.lblCom.TabIndex = 2;
+            this.lblCom.Text = "Comparaciones:";
+            // 
+            // lblIntercambios
+            // 
+            this.lblIntercambios.AutoSize = true;
+            this.lblIntercambios.Location = new System.Drawing.Point(161, 18);
+            this.lblIntercambios.Name = "lblIntercambios";
+            this.lblIntercambios.Size = new System.Drawing.Size(22, 22);
+            this.lblIntercambios.TabIndex = 1;
+            this.lblIntercambios.Text = "0";
+            // 
+            // lblInt
+            // 
+            this.lblInt.AutoSize = true;
+            this.lblInt.Location = new System.Drawing.Point(14, 18);
+            this.lblInt.Name = "lblInt";
+            this.lblInt.Size = new System.Drawing.Size(133, 22);
+            this.lblInt.TabIndex = 0;
+            this.lblInt.Text = "Intercambios:";
             // 
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Snow;
-            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnMenu.ForeColor = System.Drawing.Color.DarkRed;
             this.btnMenu.Location = new System.Drawing.Point(718, 521);
             this.btnMenu.Name = "btnMenu";
@@ -267,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.CocktailSort;
             this.ClientSize = new System.Drawing.Size(851, 601);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.gbTiempo);

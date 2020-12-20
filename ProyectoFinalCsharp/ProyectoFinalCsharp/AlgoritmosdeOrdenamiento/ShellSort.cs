@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 
@@ -18,11 +11,7 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
         int min;
         int max;
         int i;
-        int salto = 0;
-        int sw = 0;
-        int auxiliar = 0;
-        int e = 0;
-        int pasadas = 0;
+
         Stopwatch contador = new Stopwatch();
 
         public ShellSort()
@@ -40,33 +29,41 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             }
         }
 
-        public int Ordenar(int[] arreglo)
+        public int Ordenar(int n)
         {
-            salto = arreglo.Length / 2;
+            int aux;
+            int intercambios = 0;
+            int comparaciones = 0;
+            int j = vector.Length / 2;
+            int x;
 
-            while (salto > 0)
+            while (j > 0)
             {
-                sw = 1;
-                while (sw != 0)
+                x = 1;
+                while (x != 0)
                 {
-                    sw = 0;
-                    e = 1;
-                    while (e <= (arreglo.Length - salto))
+                    x = 0;
+                    i = 1;
+                    while (i <= (vector.Length - j))
                     {
-                        if (arreglo[e - 1] > arreglo[(e - 1) + salto])
+                        comparaciones++;
+                        if (vector[i - 1] > vector[(i - 1) + j])
                         {
-                            auxiliar = arreglo[(e - 1) + salto];
-                            arreglo[(e - 1) + salto] = arreglo[e - 1];
-                            arreglo[e - 1] = auxiliar;
-                            sw = 1;
+                            aux = vector[(i - 1) + j];
+                            vector[(i - 1) + j] = vector[i - 1];
+                            vector[i - 1] = aux;
+                            x = 1;
+                            intercambios++;
                         }
-                        e++;
-                        pasadas++;
+                        i++;                     
                     }
                 }
-                salto = salto / 2; //salto /2... 5/2 = 2
+                j = j / 2; //salto /2... 5/2 = 2
+
+                lblComparaciones.Text = comparaciones.ToString() + " Comparaciones";
+                lblIntercambios.Text = intercambios.ToString() + " Intercambios";
             }
-            return pasadas;
+            return intercambios;
         }
 
         public void Mostrar(ListBox l)
@@ -90,22 +87,25 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
                 Mostrar(lbNum);
                 btnGenerar.Enabled = false;
                 btnOrdenar.Enabled = true;
+                txtNum.Clear();
+                txtMin.Clear();
+                txtMax.Clear();
             }
             catch
             {
-                MessageBox.Show("Introduzca un numero valido");
+                MessageBox.Show("Introduzca un número válido.");
             }
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
             contador.Restart();
-            Ordenar(vector);
+            Ordenar(n);
             contador.Stop();
-            lblIntercambios.Text = pasadas + "";
             lblOrdenar.Text = contador.Elapsed.TotalMilliseconds.ToString() + " Milisegundos";
-            btnGenerar.Enabled = true;
             Mostrar(lbOrd);
+            btnGenerar.Enabled = true;
+            btnOrdenar.Enabled = false;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

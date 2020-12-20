@@ -16,7 +16,6 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
         public BubbleSort()
         {
             InitializeComponent();
-            btnOrdenar.Enabled = false;
         }
 
         public void GenerarDatos(int n, int min, int max)
@@ -26,7 +25,6 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             for (i = 0; i < vector.Length; i++)
             {
                 vector[i] = aleatorio.Next(min, max);
-
             }
         }
 
@@ -80,7 +78,7 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             }
             catch
             {
-                MessageBox.Show("Introduzca un numero valido");
+                MessageBox.Show("Introduzca un número válido.");
             }
         }
 

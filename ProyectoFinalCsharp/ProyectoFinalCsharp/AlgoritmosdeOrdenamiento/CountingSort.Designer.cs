@@ -182,7 +182,7 @@
             // btnGenerar
             // 
             this.btnGenerar.BackColor = System.Drawing.Color.Snow;
-            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnGenerar.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnGenerar.Location = new System.Drawing.Point(66, 280);
             this.btnGenerar.Name = "btnGenerar";
@@ -195,7 +195,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.BackColor = System.Drawing.Color.Snow;
-            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOrdenar.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnOrdenar.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnOrdenar.Location = new System.Drawing.Point(242, 280);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -208,7 +208,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Snow;
-            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnMenu.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnMenu.Location = new System.Drawing.Point(718, 521);
             this.btnMenu.Name = "btnMenu";

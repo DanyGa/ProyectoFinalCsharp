@@ -6,7 +6,6 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
 {
     public partial class CocktailSort : Form
     {
-
         int[] vector;
         int n;
         int min;
@@ -17,7 +16,6 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
         public CocktailSort()
         {
             InitializeComponent();
-            btnOrdenar.Enabled = false;
         }
 
         public void GenerarDatos(int n, int min, int max)
@@ -106,7 +104,7 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             }
             catch
             {
-                MessageBox.Show("Introduzca un numero valido");
+                MessageBox.Show("Introduzca un número válido.");
             }
         }
 

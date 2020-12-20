@@ -12,16 +12,21 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         {
             InitializeComponent();
         }
+        public MatrizAdyacencia(List<NodoGrafo> gr)
+        {
+            InitializeComponent();
+            grafo = gr;
+        }
 
         private void MatrizAdyacencia_Load(object sender, EventArgs e)
         {
-            dgv.ColumnCount = 0;
-            dgv.ColumnCount = grafo.Count;
-            dgv.RowCount = 1;
-            dgv.RowCount = grafo.Count;
+            dataGridView1.ColumnCount = 0;
+            dataGridView1.ColumnCount = grafo.Count;
+            dataGridView1.RowCount = 1;
+            dataGridView1.RowCount = grafo.Count;
             for (int i = 0; i < grafo.Count; i++)
             {
-                dgv.Columns[i].Name = i.ToString();
+                dataGridView1.Columns[i].Name = i.ToString();
 
             }
 
@@ -29,7 +34,7 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
             {
                 for (int j = 0; j < grafo.Count; j++)
                 {
-                    dgv.Rows[i].Cells[j].Value = 0;
+                    dataGridView1.Rows[i].Cells[j].Value = 0;
                 }
             }
 
@@ -37,7 +42,7 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
             {
                 for (int j = 0; j < grafo[i].aristas.Count(); j++)
                 {
-                    dgv.Rows[i].Cells[grafo[i].aristas[j].getDestino()].Value = 1;
+                    dataGridView1.Rows[i].Cells[grafo[i].aristas[j].getDestino()].Value = 1;
                 }
             }
         }

@@ -341,7 +341,7 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
 
         private void grafo1ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            MatrizAdyacencia hiMoa = new MatrizAdyacencia();
+            MatrizAdyacencia hiMoa = new MatrizAdyacencia(nodos);
             hiMoa.Show();
         }
 

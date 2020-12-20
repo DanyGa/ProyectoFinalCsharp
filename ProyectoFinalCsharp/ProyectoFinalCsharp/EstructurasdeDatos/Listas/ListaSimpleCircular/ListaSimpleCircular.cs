@@ -27,7 +27,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Listas.ListaSimpleCircular
                     btnBorrarL.Enabled = true;
                     btnContar.Enabled = true;
                     btnGuardar.Enabled = true;
-                    return;
                 }
                 else
                 {

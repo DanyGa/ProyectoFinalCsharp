@@ -79,7 +79,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Listas.ListaSimple
                     }
                     h = h.Siguiente;
                 }
-                //MessageBox.Show("No se encontro el dato");
             }
         }      
 
@@ -93,7 +92,6 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Listas.ListaSimple
                 h = h.Siguiente;
                 while (h != null)
                 {
-                    //lista += h.ToString() + ",";
                     lista += "," + h.ToString();
                     h = h.Siguiente;
                 }
@@ -105,6 +103,7 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Listas.ListaSimple
             }
 
         }
+
         public bool BuscarDato(int a)
         {
             NodoListas h = head;

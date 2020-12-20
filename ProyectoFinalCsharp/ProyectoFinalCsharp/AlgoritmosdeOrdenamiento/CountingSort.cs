@@ -30,9 +30,9 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             }
         }
 
-        public void OrdenareInvertir(int n)
+        public void Ordenar(int n)
         {
-            int[] aux;            
+            int[] aux = new int[vector.Length];            
             int valorMayor = 0;
             for (int i = 0; i < vector.Length; i++)
             {
@@ -68,28 +68,33 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
                 int posicion = aux[valor];
                 Ordenado[posicion] = valor;
                 aux[valor]++;
-            }     
+            }
+            
         }
 
-        public void Mostrar(ListBox l)
+        public string Mostrar(int[] arreglo)
         {
-            for (i = 0; i < vector.Length; i++)
+            string colaString = "";
+            colaString += arreglo[0];
+            for (int i = 0; i < arreglo.Length - 1; i++)
             {
-                l.Items.Add(vector[i]);
+                colaString += "," + arreglo[i + 1];
             }
+            return colaString;
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
             try
             {
-                lbNum.Items.Clear();
-                lbOrd.Items.Clear();
+                lblGenerado.Text = "0";
+                lblOrdenado.Text = "0";
+                lblTiempo.Text = "0:0";
                 n = int.Parse(txtNum.Text);
                 min = int.Parse(txtMin.Text);
                 max = int.Parse(txtMax.Text);
                 GenerarDatos(n, min, max);
-                Mostrar(lbNum);
+                lblGenerado.Text = Mostrar(vector);
                 btnGenerar.Enabled = false;
                 btnOrdenar.Enabled = true;
                 txtNum.Clear();
@@ -98,17 +103,17 @@ namespace ProyectoFinalCsharp.AlgoritmosdeOrdenamiento
             }
             catch
             {
-                MessageBox.Show("Introduzca un numero valido");
+                MessageBox.Show("Introduzca un número válido.");
             }
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
             contador.Restart();
-            OrdenareInvertir(n);
+            Ordenar(n);
             contador.Stop();
-            lblOrdenar.Text = contador.Elapsed.TotalMilliseconds.ToString() + " Milisegundos";
-            Mostrar(lbOrd);
+            lblTiempo.Text = contador.Elapsed.TotalMilliseconds.ToString() + " Milisegundos";
+            lblOrdenado.Text = Mostrar(Ordenado);
             btnGenerar.Enabled = true;
             btnOrdenar.Enabled = false;
         }

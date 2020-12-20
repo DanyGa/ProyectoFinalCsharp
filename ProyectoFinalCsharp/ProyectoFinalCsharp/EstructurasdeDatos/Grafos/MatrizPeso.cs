@@ -12,7 +12,8 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
 {
     public partial class MatrizPeso : Form
     {
-        List<NodoGrafo> Grafo = new List<NodoGrafo>();
+        List<NodoGrafo> grafo = new List<NodoGrafo>();
+
         public MatrizPeso()
         {
             InitializeComponent();
@@ -21,32 +22,32 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         public MatrizPeso(List<NodoGrafo> gr)
         {
             InitializeComponent();
-            Grafo = gr;
+            grafo = gr;
         }
         private void MatrizPeso_Load(object sender, EventArgs e)
         {
-            dgv.ColumnCount = 0;
-            dgv.ColumnCount = Grafo.Count;
-            dgv.RowCount = 1;
-            dgv.RowCount = Grafo.Count;
-            for (int i = 0; i < Grafo.Count; i++)
+            dataGridView1.ColumnCount = 0;
+            dataGridView1.ColumnCount = grafo.Count;
+            dataGridView1.RowCount = 1;
+            dataGridView1.RowCount = grafo.Count;
+            for (int i = 0; i < grafo.Count; i++)
             {
-                dgv.Columns[i].Name = i.ToString();
+                dataGridView1.Columns[i].Name = i.ToString();
             }
 
-            for (int i = 0; i < Grafo.Count; i++)
+            for (int i = 0; i < grafo.Count; i++)
             {
-                for (int j = 0; j < Grafo.Count; j++)
+                for (int j = 0; j < grafo.Count; j++)
                 {
-                    dgv.Rows[i].Cells[j].Value = 0;
+                    dataGridView1.Rows[i].Cells[j].Value = 0;
                 }
             }
 
-            for (int i = 0; i < Grafo.Count; i++)
+            for (int i = 0; i < grafo.Count; i++)
             {
-                for (int j = 0; j < Grafo[i].aristas.Count(); j++)
+                for (int j = 0; j < grafo[i].aristas.Count(); j++)
                 {
-                    dgv.Rows[i].Cells[Grafo[i].aristas[j].getDestino()].Value = Grafo[i].aristas[j].getPeso();
+                    dataGridView1.Rows[i].Cells[grafo[i].aristas[j].getDestino()].Value = grafo[i].aristas[j].getPeso();
                 }
             }
         }

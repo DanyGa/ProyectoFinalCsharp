@@ -29,35 +29,55 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(245, 112);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv.BackgroundColor = System.Drawing.Color.White;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(55, 80);
+            this.dgv.Name = "dgv";
+            this.dgv.RowHeadersWidth = 51;
+            this.dgv.Size = new System.Drawing.Size(560, 363);
+            this.dgv.TabIndex = 0;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Snow;
+            this.lblTitulo.Font = new System.Drawing.Font("Elephant", 22.2F);
+            this.lblTitulo.ForeColor = System.Drawing.Color.MediumTurquoise;
+            this.lblTitulo.Location = new System.Drawing.Point(153, 18);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(375, 49);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Matriz Adyacencia";
             // 
             // MatrizAdyacencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.ClientSize = new System.Drawing.Size(673, 481);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.dgv);
             this.Name = "MatrizAdyacencia";
-            this.Text = "MatrizAdyacencia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Matriz Adyacencia";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MatrizAdyacencia_FormClosed);
             this.Load += new System.EventHandler(this.MatrizAdyacencia_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

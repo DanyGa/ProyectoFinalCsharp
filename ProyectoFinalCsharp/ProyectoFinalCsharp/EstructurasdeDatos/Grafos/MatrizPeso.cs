@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
@@ -50,6 +45,11 @@ namespace ProyectoFinalCsharp.EstructurasdeDatos.Grafos
                     dataGridView1.Rows[i].Cells[grafo[i].aristas[j].getDestino()].Value = grafo[i].aristas[j].getPeso();
                 }
             }
+        }
+
+        private void MatrizPeso_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -34,7 +34,6 @@
             this.btnCocktail = new System.Windows.Forms.Button();
             this.btnCounting = new System.Windows.Forms.Button();
             this.btnShell = new System.Windows.Forms.Button();
-            this.btnInsertion = new System.Windows.Forms.Button();
             this.btnRadix = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -67,7 +66,7 @@
             this.btnBubble.BackColor = System.Drawing.Color.Snow;
             this.btnBubble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnBubble.ForeColor = System.Drawing.Color.Crimson;
-            this.btnBubble.Location = new System.Drawing.Point(97, 171);
+            this.btnBubble.Location = new System.Drawing.Point(56, 176);
             this.btnBubble.Name = "btnBubble";
             this.btnBubble.Size = new System.Drawing.Size(167, 67);
             this.btnBubble.TabIndex = 2;
@@ -80,7 +79,7 @@
             this.btnCocktail.BackColor = System.Drawing.Color.Snow;
             this.btnCocktail.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnCocktail.ForeColor = System.Drawing.Color.Crimson;
-            this.btnCocktail.Location = new System.Drawing.Point(97, 259);
+            this.btnCocktail.Location = new System.Drawing.Point(294, 176);
             this.btnCocktail.Name = "btnCocktail";
             this.btnCocktail.Size = new System.Drawing.Size(167, 67);
             this.btnCocktail.TabIndex = 3;
@@ -93,7 +92,7 @@
             this.btnCounting.BackColor = System.Drawing.Color.Snow;
             this.btnCounting.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnCounting.ForeColor = System.Drawing.Color.Crimson;
-            this.btnCounting.Location = new System.Drawing.Point(285, 259);
+            this.btnCounting.Location = new System.Drawing.Point(533, 176);
             this.btnCounting.Name = "btnCounting";
             this.btnCounting.Size = new System.Drawing.Size(167, 67);
             this.btnCounting.TabIndex = 4;
@@ -106,7 +105,7 @@
             this.btnShell.BackColor = System.Drawing.Color.Snow;
             this.btnShell.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnShell.ForeColor = System.Drawing.Color.Crimson;
-            this.btnShell.Location = new System.Drawing.Point(477, 259);
+            this.btnShell.Location = new System.Drawing.Point(422, 314);
             this.btnShell.Name = "btnShell";
             this.btnShell.Size = new System.Drawing.Size(167, 67);
             this.btnShell.TabIndex = 5;
@@ -114,25 +113,12 @@
             this.btnShell.UseVisualStyleBackColor = false;
             this.btnShell.Click += new System.EventHandler(this.btnShell_Click);
             // 
-            // btnInsertion
-            // 
-            this.btnInsertion.BackColor = System.Drawing.Color.Snow;
-            this.btnInsertion.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
-            this.btnInsertion.ForeColor = System.Drawing.Color.Crimson;
-            this.btnInsertion.Location = new System.Drawing.Point(285, 171);
-            this.btnInsertion.Name = "btnInsertion";
-            this.btnInsertion.Size = new System.Drawing.Size(167, 67);
-            this.btnInsertion.TabIndex = 6;
-            this.btnInsertion.Text = "Insertion Sort";
-            this.btnInsertion.UseVisualStyleBackColor = false;
-            this.btnInsertion.Click += new System.EventHandler(this.btnInsertion_Click);
-            // 
             // btnRadix
             // 
             this.btnRadix.BackColor = System.Drawing.Color.Snow;
             this.btnRadix.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnRadix.ForeColor = System.Drawing.Color.Crimson;
-            this.btnRadix.Location = new System.Drawing.Point(477, 171);
+            this.btnRadix.Location = new System.Drawing.Point(162, 314);
             this.btnRadix.Name = "btnRadix";
             this.btnRadix.Size = new System.Drawing.Size(167, 67);
             this.btnRadix.TabIndex = 7;
@@ -145,9 +131,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoFinalCsharp.Properties.Resources.MenuAlgoritmos;
-            this.ClientSize = new System.Drawing.Size(784, 404);
+            this.ClientSize = new System.Drawing.Size(784, 485);
             this.Controls.Add(this.btnRadix);
-            this.Controls.Add(this.btnInsertion);
             this.Controls.Add(this.btnShell);
             this.Controls.Add(this.btnCounting);
             this.Controls.Add(this.btnCocktail);
@@ -171,7 +156,6 @@
         private System.Windows.Forms.Button btnCocktail;
         private System.Windows.Forms.Button btnCounting;
         private System.Windows.Forms.Button btnShell;
-        private System.Windows.Forms.Button btnInsertion;
         private System.Windows.Forms.Button btnRadix;
     }
 }

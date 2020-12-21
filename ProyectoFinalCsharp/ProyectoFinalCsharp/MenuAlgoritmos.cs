@@ -24,31 +24,24 @@ namespace ProyectoFinalCsharp
             Hide();
         }
 
-        private void btnInsertion_Click(object sender, EventArgs e)
-        {
-            AlgoritmosdeOrdenamiento.InsertionSort sam = new AlgoritmosdeOrdenamiento.InsertionSort();
-            sam.Show();
-            Hide();
-        }
-
         private void btnCounting_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.CountingSort sa = new AlgoritmosdeOrdenamiento.CountingSort();
-            sa.Show();
+            AlgoritmosdeOrdenamiento.CountingSort sam = new AlgoritmosdeOrdenamiento.CountingSort();
+            sam.Show();
             Hide();
         }
 
         private void btnRadix_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.RadixSort o = new AlgoritmosdeOrdenamiento.RadixSort();
-            o.Show();
+            AlgoritmosdeOrdenamiento.RadixSort sa = new AlgoritmosdeOrdenamiento.RadixSort();
+            sa.Show();
             Hide();
         }
 
         private void btnShell_Click(object sender, EventArgs e)
         {
-            AlgoritmosdeOrdenamiento.ShellSort yuk = new AlgoritmosdeOrdenamiento.ShellSort();
-            yuk.Show();
+            AlgoritmosdeOrdenamiento.ShellSort o = new AlgoritmosdeOrdenamiento.ShellSort();
+            o.Show();
             Hide();
         }
 

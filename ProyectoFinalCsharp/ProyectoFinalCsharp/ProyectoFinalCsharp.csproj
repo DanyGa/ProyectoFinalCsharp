@@ -67,12 +67,6 @@
     <Compile Include="AlgoritmosdeOrdenamiento\CountingSort.Designer.cs">
       <DependentUpon>CountingSort.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.Designer.cs">
-      <DependentUpon>InsertionSort.cs</DependentUpon>
-    </Compile>
     <Compile Include="AlgoritmosdeOrdenamiento\RadixSort.cs">
       <SubType>Form</SubType>
     </Compile>
